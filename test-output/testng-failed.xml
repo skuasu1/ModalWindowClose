@@ -5,8 +5,8 @@
     <classes>
       <class name="com.flipkart.testcase.FlipkartLoginTestCase">
         <methods>
-          <include name="closeModalWindow"/>
           <include name="init"/>
+          <include name="testMethod"/>
         </methods>
       </class> <!-- com.flipkart.testcase.FlipkartLoginTestCase -->
     </classes>

@@ -1,7 +1,5 @@
 package com.flipkart.testcase;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,20 +19,15 @@ public class FlipkartLoginTestCase extends FlipkartTestBase {
 		initialization();
 		flipkartlogin = new FlipkartLogin();
 	}
-	
-	/*
-	 * @Test(priority = 1) public void verifyTitleNew() { String title =
-	 * flipkartlogin.verifyTitle(); if (title == "Facebook") {
-	 * Assert.assertEquals(title, "Facebook"); } }
-	 */
+
 	@Test(priority = 1)
-	public void closeModalWindow() {
+	public void testMethod() {
 		// here unable to close the modal window
 		flipkartlogin.closeWindow();
+		flipkartlogin.mouseHowerEle();
+		flipkartlogin.verifyMI();
+		flipkartlogin.slidePriceSliderDropdown();
+		flipkartlogin.searhMobile();
+		flipkartlogin.clickFirstproductList();
 	}
-
-	/*
-	 * @AfterMethod public void tearDown() { driver.close(); }
-	 */
-
 }
